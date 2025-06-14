@@ -1,22 +1,21 @@
 // !$*UTF8*$!
 {
   archiveVersion = 1;
-  classes = {
-  };
+  classes = { };
   objectVersion = 50;
   objects = {
     /* Begin PBXBuildFile section */
-    1A = {isa = PBXBuildFile; fileRef = 1B; };
-    1C = {isa = PBXBuildFile; fileRef = 1D; };
-    1E = {isa = PBXBuildFile; fileRef = 1F; };
-    1G = {isa = PBXBuildFile; fileRef = 1H; };
+    1A = { isa = PBXBuildFile; fileRef = 1B; };
+    1C = { isa = PBXBuildFile; fileRef = 1D; };
+    1E = { isa = PBXBuildFile; fileRef = 1F; };
+    1G = { isa = PBXBuildFile; fileRef = 1H; };
     /* End PBXBuildFile section */
     /* Begin PBXFileReference section */
-    1B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
-    1D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-    1F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
-    1H = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../Info.plist; sourceTree = "<group>"; };
-    1I = {isa = PBXFileReference; explicitFileType = wrapper.application; path = BaymaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    1B = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+    1D = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+    1F = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+    1H = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../Info.plist; sourceTree = "<group>"; };
+    1I = { isa = PBXFileReference; explicitFileType = wrapper.application; path = BaymaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
     /* End PBXFileReference section */
     /* Begin PBXGroup section */
     1J = {
@@ -25,7 +24,7 @@
         1B,
         1D,
         1F,
-        1H,
+        1H
       );
       sourceTree = "<group>";
     };
@@ -35,7 +34,7 @@
       isa = PBXNativeTarget;
       buildConfigurationList = 1L;
       buildPhases = (
-        {isa = PBXSourcesBuildPhase; files = (1A, 1C, 1E, 1G); runOnlyForDeploymentPostprocessing = 0; },
+        { isa = PBXSourcesBuildPhase; files = (1A, 1C, 1E, 1G); runOnlyForDeploymentPostprocessing = 0; }
       );
       name = BaymaxApp;
       productName = BaymaxApp;
@@ -60,7 +59,7 @@
     1L = {
       isa = XCConfigurationList;
       buildConfigurations = (
-        1M,
+        1M
       );
       defaultConfigurationIsVisible = 0;
       defaultConfigurationName = Release;
@@ -80,7 +79,7 @@
       projectDirPath = "";
       projectRoot = "";
       targets = (
-        1K,
+        1K
       );
     };
     /* End PBXProject section */
