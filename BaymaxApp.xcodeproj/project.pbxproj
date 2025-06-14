@@ -12,10 +12,10 @@
     1G = {isa = PBXBuildFile; fileRef = 1H; };
     /* End PBXBuildFile section */
     /* Begin PBXFileReference section */
-    1B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-    1D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-    1F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-    1H = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+    1B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+    1D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+    1F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+    1H = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
     1I = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaymaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
     /* End PBXFileReference section */
     /* Begin PBXGroup section */
@@ -35,7 +35,7 @@
       isa = PBXNativeTarget;
       buildConfigurationList = 1L;
       buildPhases = (
-        {isa = PBXSourcesBuildPhase; files = (1A, 1C, 1E, 1G); runOnlyForDeploymentPostprocessing = 0; },
+        {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (1A, 1C, 1E, 1G); runOnlyForDeploymentPostprocessing = 0; },
       );
       buildRules = (
       );
@@ -52,11 +52,14 @@
       isa = XCBuildConfiguration;
       buildSettings = {
         ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CLANG_ENABLE_MODULES = YES;
+        CODE_SIGN_IDENTITY = "iPhone Developer";
+        DEVELOPMENT_TEAM = "";
         INFOPLIST_FILE = Info.plist;
         PRODUCT_BUNDLE_IDENTIFIER = com.example.Baymax;
         PRODUCT_NAME = BaymaxApp;
         SWIFT_VERSION = 5.0;
-        TARGETED_DEVICE_FAMILY = "1,2"; // 1 = iPhone, 2 = iPad, 1,2 = entrambi
+        TARGETED_DEVICE_FAMILY = "1,2"; // 1,2 per iPhone e iPad
       };
       name = Release;
     };
@@ -82,6 +85,8 @@
       TargetAttributes = {
         1K = {
           CreatedOnToolsVersion = 15.4;
+          DevelopmentTeam = "";
+          ProvisioningStyle = Automatic;
         };
       };
     };
