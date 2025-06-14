@@ -1,8 +1,6 @@
 name: Build Baymax iOS App
 
 on:
-  push:
-    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -12,16 +10,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Set up Xcode
-      run: |
-        sudo xcode-select -s /Applications/Xcode_15.4.app
-        xcodebuild -version
+      with:
+        fetch-depth: 1
 
     - name: Build iOS app
       run: |
-        xcodebuild -project BaymaxApp.xcodeproj -scheme BaymaxApp -sdk iphoneos -configuration Release -archivePath BaymaxApp.xcarchive archive
-        xcodebuild -exportArchive -archivePath BaymaxApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist
+        xcodebuild -project BaymaxApp.xcodeproj -scheme BaymaxApp -sdk iphoneos -configuration Release -archivePath BaymaxApp.xcarchive archive -quiet
+        xcodebuild -exportArchive -archivePath BaymaxApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -quiet
 
     - name: Create exportOptions.plist
       run: |
