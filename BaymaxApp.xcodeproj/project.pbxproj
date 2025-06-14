@@ -16,7 +16,7 @@
     1D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
     1F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
     1H = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-    1I = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaymaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    1I = {isa = PBXFileReference; explicitFileType = wrapper.application; path = BaymaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
     /* End PBXFileReference section */
     /* Begin PBXGroup section */
     1J = {
@@ -35,11 +35,7 @@
       isa = PBXNativeTarget;
       buildConfigurationList = 1L;
       buildPhases = (
-        {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (1A, 1C, 1E, 1G); runOnlyForDeploymentPostprocessing = 0; },
-      );
-      buildRules = (
-      );
-      dependencies = (
+        {isa = PBXSourcesBuildPhase; files = (1A, 1C, 1E, 1G); },
       );
       name = BaymaxApp;
       productName = BaymaxApp;
@@ -51,15 +47,11 @@
     1M = {
       isa = XCBuildConfiguration;
       buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-        CLANG_ENABLE_MODULES = YES;
-        CODE_SIGN_IDENTITY = "iPhone Developer";
-        DEVELOPMENT_TEAM = "";
         INFOPLIST_FILE = Info.plist;
         PRODUCT_BUNDLE_IDENTIFIER = com.example.Baymax;
         PRODUCT_NAME = BaymaxApp;
         SWIFT_VERSION = 5.0;
-        TARGETED_DEVICE_FAMILY = "1,2"; // 1,2 per iPhone e iPad
+        TARGETED_DEVICE_FAMILY = "1,2"; // iPhone e iPad
       };
       name = Release;
     };
@@ -74,37 +66,30 @@
       defaultConfigurationName = Release;
     };
     /* End XCConfigurationList section */
+    /* Begin PBXProject section */
+    1N = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1530;
+        ORGANIZATIONNAME = "Ivan Barbero";
+      };
+      buildConfigurationList = 1L;
+      compatibilityVersion = "Xcode 15.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+        Base,
+      );
+      mainGroup = 1J;
+      productRefGroup = 1J;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1K,
+      );
+    };
+    /* End PBXProject section */
   };
   rootObject = 1N;
-  /* Begin PBXProject section */
-  1N = {
-    isa = PBXProject;
-    attributes = {
-      LastUpgradeCheck = 1530;
-      ORGANIZATIONNAME = "Ivan Barbero";
-      TargetAttributes = {
-        1K = {
-          CreatedOnToolsVersion = 15.4;
-          DevelopmentTeam = "";
-          ProvisioningStyle = Automatic;
-        };
-      };
-    };
-    buildConfigurationList = 1L;
-    compatibilityVersion = "Xcode 15.0";
-    developmentRegion = en;
-    hasScannedForEncodings = 0;
-    knownRegions = (
-      en,
-      Base,
-    );
-    mainGroup = 1J;
-    productRefGroup = 1J;
-    projectDirPath = "";
-    projectRoot = "";
-    targets = (
-      1K,
-    );
-  };
-  /* End PBXProject section */
 }
